@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stevensons Engineering</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stevenson's Engineering LLC</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to Stevensons Engineering</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Stevensons Engineering provides innovative solutions for your engineering needs. We specialize in mechanical, electrical, and civil engineering projects for clients worldwide.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Project Consulting</li>
-                <li>Design & Prototyping</li>
-                <li>Maintenance & Support</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+  <header>
+    <h1>Stevenson's Engineering LLC</h1>
+    <h2>Utility-Scale, Commercial, and Residential Renewable Energy Systems Consulting</h2>
+  </header>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+  <section class="intro">
+    <img src="images/ceo.jpg" alt="CEO" class="round-photo" />
+    <p><strong>Chief Executive Officer</strong> - Alexander Stevenson</p>
+  </section>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+  <section class="services">
+    <div class="service">
+      <img src="images/bess.jpg" alt="Battery Storage" class="circle-img" />
+      <p><strong>Battery Energy Storage Systems</strong></p>
+    </div>
+    <div class="service">
+      <img src="images/solar.jpg" alt="Solar PV" class="circle-img" />
+      <p><strong>Solar PV Systems</strong></p>
+    </div>
+    <div class="service">
+      <img src="images/microgrid.jpg" alt="Microgrids" class="circle-img" />
+      <p><strong>Renewable Microgrids</strong></p>
+    </div>
+    <div class="service">
+      <img src="images/energy.jpg" alt="Energy Mgmt" class="circle-img" />
+      <p><strong>Energy Management</strong></p>
+    </div>
+  </section>
 
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Stevensons Engineering. All rights reserved.</p>
-    </footer>
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+      <div class="form-group">
+        <input type="text" name="First Name" placeholder="First Name" required />
+        <input type="text" name="Last Name" placeholder="Last Name" required />
+      </div>
+      <input type="email" name="Email" placeholder="Email" required />
+      <textarea name="Message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section class="details">
+    <div class="left">
+      <h2>Battery Energy Storage Systems (BESS)</h2>
+      <ul>
+        <li>Design, optimization, and control strategies for utility-scale and behind-the-meter BESS</li>
+        <li>AI/ML-based forecasting and scheduling for resilience and economic dispatch</li>
+        <li>Protection, power quality analysis, and inverter operation (grid-forming and grid-following)</li>
+        <li>Battery prognostics, diagnostics, and lifecycle management solutions</li>
+      </ul>
+    </div>
+    <div class="right">
+      <h3>Solar Photovoltaic (PV) Systems</h3>
+      <ul>
+        <li>PV system performance modeling and forecasting</li>
+        <li>Storage integration for demand response and grid support</li>
+        <li>Power quality monitoring, inverter optimization</li>
+        <li>Feasibility studies and techno-economic analysis</li>
+      </ul>
+      <h3>Renewable Microgrids</h3>
+      <ul>
+        <li>End-to-end design and simulation</li>
+        <li>DER integration including solar and storage</li>
+        <li>AI-based controllers for optimization</li>
+        <li>SCADA, protection, and islanding strategies</li>
+      </ul>
+      <h3>Energy Management</h3>
+      <ul>
+        <li>Forecasting for load, PV, and market dynamics</li>
+        <li>Energy scheduling and optimization tools</li>
+        <li>DER selection, techno-economic assessment</li>
+        <li>Custom dashboards for decision-making</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Stevenson's Engineering LLC</strong> — Miami, Florida</p>
+  </footer>
 </body>
 </html>
