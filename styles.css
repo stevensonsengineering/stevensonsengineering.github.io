@@ -6,32 +6,28 @@ body {
   padding: 0;
 }
 
-/* ===== Header with logo beside text ===== */
 header {
-  background: #f3f1ec; /* match Contact section */
-  color: #111;         /* ensure readability */
+  background: #f3f1ec;
+  color: #111;
   padding: 20px 40px;
 }
 
 .header-container {
   display: flex;
-  align-items: center; /* vertically center logo and text */
-  justify-content: flex-start;
+  align-items: center;
   gap: 20px;
-  flex-wrap: wrap; /* allow stacking on small screens */
 }
 
 .logo {
-  height: 80px;   /* scales logo to header height */
-  width: auto;    /* keep aspect ratio */
-  flex-shrink: 0; /* prevent squishing */
+  height: 80px;
+  width: auto;
+  flex-shrink: 0;
 }
 
 .header-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left; /* align text to left beside logo */
 }
 
 header h1 {
@@ -40,11 +36,10 @@ header h1 {
 }
 
 header h2 {
-  font-size: 1.4rem;
-  margin-top: 5px;
+  font-size: 1.2rem;
+  margin: 5px 0 0;
 }
 
-/* ===== Intro Section ===== */
 .intro {
   text-align: center;
   margin-top: 30px;
@@ -57,7 +52,6 @@ header h2 {
   object-fit: cover;
 }
 
-/* ===== Services Section ===== */
 .services {
   display: flex;
   justify-content: center;
@@ -78,7 +72,6 @@ header h2 {
   object-fit: cover;
 }
 
-/* ===== Details Section ===== */
 .details {
   display: flex;
   flex-wrap: wrap;
@@ -92,39 +85,39 @@ header h2 {
   flex: 1 1 400px;
 }
 
-/* ===== Partners Section ===== */
 .partners {
-  padding: 40px 20px;
   text-align: center;
-  background: #fff;
+  padding: 40px 20px;
 }
 
 .partners h2 {
+  font-size: 1.6rem;
   margin-bottom: 20px;
 }
 
 .partners-logos {
   display: flex;
-  justify-content: center;   /* center the row */
+  justify-content: space-around;
   align-items: center;
-  gap: 80px;                 /* even space around center */
+  gap: 40px;
   flex-wrap: wrap;
 }
 
 .partners-logos img {
-  max-width: 200px;   /* scale down responsively */
-  width: 100%;
+  max-width: 200px;
   height: auto;
-  flex: 1 1 150px;    /* allows shrinking on smaller screens */
+  flex: 1 1 200px;
 }
 
-/* ===== Contact Section ===== */
+/* ==== CONTACT SECTION ==== */
 .contact {
   background: #f3f1ec;
   padding: 40px 20px;
   text-align: center;
 }
 
+/* OLD FORM STYLING (kept for reference, no longer needed) */
+/*
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -160,34 +153,26 @@ button {
   border-radius: 25px;
   cursor: pointer;
 }
+*/
 
-/* ===== Footer ===== */
+/* NEW CONTACT INFO STYLING */
+.contact p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.contact a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   padding: 20px;
   font-weight: bold;
-}
-
-/* ===== Responsive Adjustments ===== */
-@media (max-width: 768px) {
-  .header-container {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .header-text {
-    text-align: center;
-  }
-
-  .logo {
-    height: 60px; /* slightly smaller for mobile */
-  }
-
-  .partners-logos {
-    gap: 40px; /* less gap on smaller screens */
-  }
-
-  .partners-logos img {
-    max-width: 140px;
-  }
 }
