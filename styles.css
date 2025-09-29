@@ -78,6 +78,46 @@ header h2 {
   object-fit: cover;
 }
 
+/* ===== Details Section ===== */
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.details .left,
+.details .right {
+  flex: 1 1 400px;
+}
+
+/* ===== Partners Section ===== */
+.partners {
+  padding: 40px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.partners h2 {
+  margin-bottom: 20px;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;   /* center the row */
+  align-items: center;
+  gap: 80px;                 /* even space around center */
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  max-width: 200px;   /* scale down responsively */
+  width: 100%;
+  height: auto;
+  flex: 1 1 150px;    /* allows shrinking on smaller screens */
+}
+
 /* ===== Contact Section ===== */
 .contact {
   background: #f3f1ec;
@@ -121,20 +161,6 @@ button {
   cursor: pointer;
 }
 
-/* ===== Details Section ===== */
-.details {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 40px 20px;
-  gap: 30px;
-  justify-content: center;
-}
-
-.details .left,
-.details .right {
-  flex: 1 1 400px;
-}
-
 /* ===== Footer ===== */
 footer {
   text-align: center;
@@ -155,5 +181,13 @@ footer {
 
   .logo {
     height: 60px; /* slightly smaller for mobile */
+  }
+
+  .partners-logos {
+    gap: 40px; /* less gap on smaller screens */
+  }
+
+  .partners-logos img {
+    max-width: 140px;
   }
 }
