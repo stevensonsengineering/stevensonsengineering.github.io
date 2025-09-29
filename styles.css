@@ -6,11 +6,32 @@ body {
   padding: 0;
 }
 
+/* ===== Header with logo beside text ===== */
 header {
-  text-align: center;
-  padding: 40px 20px;
   background: #f3f1ec; /* match Contact section */
   color: #111;         /* ensure readability */
+  padding: 20px 40px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center; /* vertically center logo and text */
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap; /* allow stacking on small screens */
+}
+
+.logo {
+  height: 80px;   /* scales logo to header height */
+  width: auto;    /* keep aspect ratio */
+  flex-shrink: 0; /* prevent squishing */
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; /* align text to left beside logo */
 }
 
 header h1 {
@@ -20,9 +41,10 @@ header h1 {
 
 header h2 {
   font-size: 1.4rem;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
+/* ===== Intro Section ===== */
 .intro {
   text-align: center;
   margin-top: 30px;
@@ -35,6 +57,7 @@ header h2 {
   object-fit: cover;
 }
 
+/* ===== Services Section ===== */
 .services {
   display: flex;
   justify-content: center;
@@ -55,6 +78,7 @@ header h2 {
   object-fit: cover;
 }
 
+/* ===== Contact Section ===== */
 .contact {
   background: #f3f1ec;
   padding: 40px 20px;
@@ -97,6 +121,7 @@ button {
   cursor: pointer;
 }
 
+/* ===== Details Section ===== */
 .details {
   display: flex;
   flex-wrap: wrap;
@@ -110,8 +135,25 @@ button {
   flex: 1 1 400px;
 }
 
+/* ===== Footer ===== */
 footer {
   text-align: center;
   padding: 20px;
   font-weight: bold;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .header-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .logo {
+    height: 60px; /* slightly smaller for mobile */
+  }
 }
